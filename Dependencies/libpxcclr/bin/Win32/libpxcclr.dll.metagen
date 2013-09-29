@@ -1,0 +1,1349 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly libpxcclr, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly Microsoft.VisualC, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Struct PXCMRectU32: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 x : Public
+    UInt32 y : Public
+    UInt32 w : Public
+    UInt32 h : Public
+Struct PXCMSizeU32: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 width : Public
+    UInt32 height : Public
+Struct PXCMRatioF32: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single denominator : Public
+    Single numerator : Public
+Struct PXCMRatioU32: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 denominator : Public
+    UInt32 numerator : Public
+Struct PXCMPointF32: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single x : Public
+    Single y : Public
+Struct PXCMPointU32: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 x : Public
+    UInt32 y : Public
+Struct PXCMRangeU32: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 min : Public
+    UInt32 max : Public
+Struct PXCMRangeI32: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 min : Public
+    Int32 max : Public
+Struct PXCMRangeF32: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single min : Public
+    Single max : Public
+Struct PXCMPoint3DF32: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single x : Public
+    Single y : Public
+    Single z : Public
+Class PXCMBase: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Int32 CUID IsConst : Public, Static
+    Int32 WORKING_PROFILE IsConst : Public, Static
+  Methods:
+    DynamicCast(Int32): PrivateScope, Public, HideBySig
+    DynamicCast(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct PXCMArray<int\,4\,4>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    Int32 Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName
+Struct PXCMArray<System::IntPtr\,4\,4>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    IntPtr Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, IntPtr): PrivateScope, Public, HideBySig, SpecialName
+Class PXCMImage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Properties:
+    PXCMRectU32 roi 'get set' : 
+    UInt64 timeStamp 'get set' : 
+    Int32 options 'get set' : 
+    Int32 option 'get set' :  (Obsolete)
+    ImageInfo imageInfo 'get ' : 
+  Methods:
+    get_imageInfo(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    QueryInfo(ImageInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_option(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_option(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_options(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_options(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    QueryOption(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetOption(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_timeStamp(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_timeStamp(UInt64): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    QueryTimeStamp(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetTimeStamp(UInt64): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_roi(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_roi(PXCMRectU32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    QueryROI(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetROI(PXCMRectU32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CopyData(PXCMImage): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AcquireAccess(Access, ImageData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AcquireAccess(Access, ColorFormat, ImageData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AcquireAccess(Access, PXCMAccelerator, ImageData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AcquireAccess(Access, PXCMAccelerator, ColorFormat, ImageData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    TryAccess(Access, ImageData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    TryAccess(Access, ColorFormat, ImageData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    TryAccess(Access, PXCMAccelerator, ImageData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    TryAccess(Access, PXCMAccelerator, ColorFormat, ImageData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ReleaseAccess(ImageData&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryBitmap(PXCMSession, Bitmap&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask (Obsolete)
+    Dispose(PXCMImage[]): PrivateScope, Public, Static, HideBySig
+Struct PXCMImage+ImageType: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ImageType IMAGE_TYPE_MASK = -65536 : Public, Static, Literal, HasDefault
+    ImageType IMAGE_TYPE_DEPTH = 131072 : Public, Static, Literal, HasDefault
+    ImageType IMAGE_TYPE_COLOR = 65536 : Public, Static, Literal, HasDefault
+Struct PXCMImage+ColorFormat: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ColorFormat COLOR_FORMAT_VERTICES = 131073 : Public, Static, Literal, HasDefault
+    ColorFormat COLOR_FORMAT_DEPTH = 131072 : Public, Static, Literal, HasDefault
+    ColorFormat COLOR_FORMAT_GRAY = 65540 : Public, Static, Literal, HasDefault
+    ColorFormat COLOR_FORMAT_RGB24 = 65539 : Public, Static, Literal, HasDefault
+    ColorFormat COLOR_FORMAT_RGB32 = 65538 : Public, Static, Literal, HasDefault
+    ColorFormat COLOR_FORMAT_NV12 = 65537 : Public, Static, Literal, HasDefault
+    ColorFormat COLOR_FORMAT_YUY2 = 65536 : Public, Static, Literal, HasDefault
+Struct PXCMImage+ImageOption: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ImageOption IMAGE_OPTION_NO_CONFIDENCE_MAP = 2 : Public, Static, Literal, HasDefault
+    ImageOption IMAGE_OPTION_NO_UV_MAP = 1 : Public, Static, Literal, HasDefault
+Struct PXCMImage+ImageInfo: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 width : Public
+    UInt32 height : Public
+    ColorFormat format : Public
+    UInt32 reserved : Public
+Struct PXCMImage+SurfaceType: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SurfaceType SURFACE_TYPE_OCL_MEMOBJ = 524288 : Public, Static, Literal, HasDefault
+    SurfaceType SURFACE_TYPE_DX11_SURFACE = 262144 : Public, Static, Literal, HasDefault
+    SurfaceType SURFACE_TYPE_DX9_SURFACE = 131072 : Public, Static, Literal, HasDefault
+    SurfaceType SURFACE_TYPE_SYSTEM_MEMORY = 65536 : Public, Static, Literal, HasDefault
+Struct PXCMImage+ImageBuffer: AutoLayout, AnsiClass, Class, NestedPublic, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    IntPtr surfaceHandle : Public
+    PXCMArray<int\,4\,4> pitches : Public
+    PXCMArray<System::IntPtr\,4\,4> planes : Public
+Struct PXCMImage+ImageData: AutoLayout, AnsiClass, Class, NestedPublic, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    ColorFormat format : Public
+    SurfaceType type : Public
+    UInt64 reserved : Public
+    ImageBuffer buffer : Public
+  Methods:
+    ToByteArray(Int32, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToShortArray(Int32, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToFloatArray(Int32, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToBitmap(UInt32, UInt32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToBitmap(Int32, UInt32, UInt32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToWritableBitmap(UInt32, UInt32, Double, Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToWritableBitmap(Int32, UInt32, UInt32, Double, Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMImage+Access: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Access ACCESS_READ_WRITE = 3 : Public, Static, Literal, HasDefault
+    Access ACCESS_WRITE = 2 : Public, Static, Literal, HasDefault
+    Access ACCESS_READ = 1 : Public, Static, Literal, HasDefault
+Struct PXCMArray<unsigned int\,4\,3>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    UInt32 Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, UInt32): PrivateScope, Public, HideBySig, SpecialName
+Class PXCMAudio: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Properties:
+    UInt64 timeStamp 'get set' : 
+    AudioOption options 'get set' : 
+    AudioInfo audioInfo 'get ' : 
+  Methods:
+    get_audioInfo(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    QueryInfo(AudioInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_options(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_options(AudioOption): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    QueryOption(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetOption(AudioOption): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_timeStamp(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_timeStamp(UInt64): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    QueryTimeStamp(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetTimeStamp(UInt64): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CopyData(PXCMAudio): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AcquireAccess(Access, AudioData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AcquireAccess(Access, AudioFormat, AudioData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AcquireAccess(Access, PXCMAccelerator, AudioData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AcquireAccess(Access, PXCMAccelerator, AudioFormat, AudioData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    TryAccess(Access, AudioData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    TryAccess(Access, AudioFormat, AudioData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    TryAccess(Access, PXCMAccelerator, AudioData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    TryAccess(Access, PXCMAccelerator, AudioFormat, AudioData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ReleaseAccess(AudioData&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMAudio+AudioFormat: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    AudioFormat AUDIO_FORMAT_SIZE_MASK = 255 : Public, Static, Literal, HasDefault
+    AudioFormat AUDIO_FORMAT_IEEE_FLOAT = 1414284832 : Public, Static, Literal, HasDefault
+    AudioFormat AUDIO_FORMAT_PCM = 1296257040 : Public, Static, Literal, HasDefault
+Struct PXCMAudio+ChannelMask: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ChannelMask CHANNEL_MASK_SIDE_RIGHT = 1024 : Public, Static, Literal, HasDefault
+    ChannelMask CHANNEL_MASK_SIDE_LEFT = 512 : Public, Static, Literal, HasDefault
+    ChannelMask CHANNEL_MASK_BACK_RIGHT = 32 : Public, Static, Literal, HasDefault
+    ChannelMask CHANNEL_MASK_BACK_LEFT = 16 : Public, Static, Literal, HasDefault
+    ChannelMask CHANNEL_MASK_LOW_FREQUENCY = 8 : Public, Static, Literal, HasDefault
+    ChannelMask CHANNEL_MASK_FRONT_CENTER = 4 : Public, Static, Literal, HasDefault
+    ChannelMask CHANNEL_MASK_FRONT_RIGHT = 2 : Public, Static, Literal, HasDefault
+    ChannelMask CHANNEL_MASK_FRONT_LEFT = 1 : Public, Static, Literal, HasDefault
+Struct PXCMAudio+AudioInfo: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 bufferSize : Public
+    AudioFormat format : Public
+    UInt32 sampleRate : Public
+    UInt32 nchannels : Public
+    ChannelMask channelMask : Public
+    PXCMArray<unsigned int\,4\,3> reserved : Public
+Struct PXCMAudio+AudioOption: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+Struct PXCMAudio+SurfaceType: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SurfaceType SURFACE_TYPE_DX9_SURFACE = 2 : Public, Static, Literal, HasDefault
+    SurfaceType SURFACE_TYPE_SYSTEM_MEMORY = 1 : Public, Static, Literal, HasDefault
+Struct PXCMAudio+AudioBuffer: AutoLayout, AnsiClass, Class, NestedPublic, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    IntPtr dataPtr : Public
+    IntPtr surfaceHandle : Public
+  Properties:
+    Byte BYTE [Int32] 'get set' : 
+    Int16 I16 [Int32] 'get set' : 
+    Single F32 [Int32] 'get set' : 
+  Methods:
+    get_F32(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_F32(Int32, Single): PrivateScope, Public, HideBySig, SpecialName
+    get_I16(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_I16(Int32, Int16): PrivateScope, Public, HideBySig, SpecialName
+    get_BYTE(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_BYTE(Int32, Byte): PrivateScope, Public, HideBySig, SpecialName
+Struct PXCMAudio+AudioData: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    AudioFormat format : Public
+    SurfaceType type : Public
+    UInt32 dataSize : Public
+    UInt32 reserved : Public
+    AudioBuffer buffer : Public
+  Methods:
+    ToByteArray(): PrivateScope, Public, HideBySig
+Struct PXCMAudio+Access: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Access ACCESS_READ_WRITE = 3 : Public, Static, Literal, HasDefault
+    Access ACCESS_WRITE = 2 : Public, Static, Literal, HasDefault
+    Access ACCESS_READ = 1 : Public, Static, Literal, HasDefault
+Class PXCMAccelerator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Properties:
+    Device device 'get ' : 
+    AccelType accelType 'get ' : 
+  Methods:
+    get_accelType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_device(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    QueryAccelType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryDevice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryHandle(HandleType, IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetHandle(HandleType, IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateImage(ImageInfo&, PXCMImage&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateImage(ImageInfo&, ImageOption, ImageData&, PXCMImage&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateAudio(AudioInfo&, PXCMAudio&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateAudio(AudioInfo&, AudioOption, AudioData&, PXCMAudio&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMAccelerator+Device: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Device DEVICE_CURRENT = -2147483648 : Public, Static, Literal, HasDefault
+    Device DEVICE_3 = 8 : Public, Static, Literal, HasDefault
+    Device DEVICE_2 = 4 : Public, Static, Literal, HasDefault
+    Device DEVICE_1 = 2 : Public, Static, Literal, HasDefault
+    Device DEVICE_0 = 1 : Public, Static, Literal, HasDefault
+    Device DEVICE_ANY = 2147483647 : Public, Static, Literal, HasDefault
+Struct PXCMAccelerator+AccelType: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    AccelType ACCEL_TYPE_GPU_VIA_DX9 = 256 : Public, Static, Literal, HasDefault
+    AccelType ACCEL_TYPE_GPU = 65280 : Public, Static, Literal, HasDefault
+    AccelType ACCEL_TYPE_CPU = 255 : Public, Static, Literal, HasDefault
+    AccelType ACCEL_TYPE_ANY = 0 : Public, Static, Literal, HasDefault
+Struct PXCMAccelerator+HandleType: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    HandleType HANDLE_TYPE_OCL_DEVICE = 32 : Public, Static, Literal, HasDefault
+    HandleType HANDLE_TYPE_DX11_DEVICE = 8 : Public, Static, Literal, HasDefault
+    HandleType HANDLE_TYPE_DX9_DEVICE = 2 : Public, Static, Literal, HasDefault
+Struct pxcmStatus: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    pxcmStatus PXCM_STATUS_PARAM_INPLACE = 102 : Public, Static, Literal, HasDefault
+    pxcmStatus PXCM_STATUS_TIME_GAP = 101 : Public, Static, Literal, HasDefault
+    pxcmStatus PXCM_STATUS_EXEC_TIMEOUT = -303 : Public, Static, Literal, HasDefault
+    pxcmStatus PXCM_STATUS_EXEC_INPROGRESS = -302 : Public, Static, Literal, HasDefault
+    pxcmStatus PXCM_STATUS_EXEC_ABORTED = -301 : Public, Static, Literal, HasDefault
+    pxcmStatus PXCM_STATUS_DEVICE_BUSY = -203 : Public, Static, Literal, HasDefault
+    pxcmStatus PXCM_STATUS_DEVICE_LOST = -202 : Public, Static, Literal, HasDefault
+    pxcmStatus PXCM_STATUS_DEVICE_FAILED = -201 : Public, Static, Literal, HasDefault
+    pxcmStatus PXCM_STATUS_ALLOC_FAILED = -102 : Public, Static, Literal, HasDefault
+    pxcmStatus PXCM_STATUS_HANDLE_INVALID = -101 : Public, Static, Literal, HasDefault
+    pxcmStatus PXCM_STATUS_ITEM_UNAVAILABLE = -3 : Public, Static, Literal, HasDefault
+    pxcmStatus PXCM_STATUS_PARAM_UNSUPPORTED = -2 : Public, Static, Literal, HasDefault
+    pxcmStatus PXCM_STATUS_FEATURE_UNSUPPORTED = -1 : Public, Static, Literal, HasDefault
+    pxcmStatus PXCM_STATUS_NO_ERROR = 0 : Public, Static, Literal, HasDefault
+Class PXCMScheduler: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Properties:
+    Priority priority 'get set' : 
+  Methods:
+    set_priority(Priority): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_priority(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SetPriority(Priority): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryPriority(Priority&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMScheduler+Priority: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Priority PRIORITY_HIGH = 2 : Public, Static, Literal, HasDefault
+    Priority PRIORITY_LOW = 1 : Public, Static, Literal, HasDefault
+    Priority PRIORITY_NORMAL = 0 : Public, Static, Literal, HasDefault
+Class PXCMScheduler+SyncPoint: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+    Int32 TIMEOUT_INFINITE IsConst : Public, Static
+    Int32 SYNCEX_LIMIT IsConst : Public, Static
+  Methods:
+    QueryPtr(PXCMBase): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Synchronize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Synchronize(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SynchronizeEx(SyncPoint[]): PrivateScope, Public, Static, HideBySig
+    SynchronizeEx(SyncPoint[], UInt32&(Out)): PrivateScope, Public, Static, HideBySig
+    SynchronizeEx(SyncPoint[], UInt32): PrivateScope, Public, Static, HideBySig
+    SynchronizeEx(SyncPoint[], UInt32&(Out), UInt32): PrivateScope, Public, Static, HideBySig
+    Dispose(SyncPoint[]): PrivateScope, Public, Static, HideBySig
+Struct PXCMString<256>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Methods:
+    get(): PrivateScope, Public, HideBySig
+    set(String): PrivateScope, Public, HideBySig
+Struct PXCMArray<unsigned int\,4\,12>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    UInt32 Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, UInt32): PrivateScope, Public, HideBySig, SpecialName
+Class PXCMSession: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Properties:
+    ImplVersion version 'get ' : 
+  Methods:
+    get_version(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    QueryVersion(ImplVersion&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryImpl(UInt32, ImplDesc&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryImpl(ImplDesc&, UInt32, ImplDesc&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateScheduler(PXCMScheduler&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateAccelerator(PXCMAccelerator&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateAccelerator(AccelType, PXCMAccelerator&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateImpl(PXCMScheduler, PXCMAccelerator, ImplDesc&, Int32, TT&(Out)): PrivateScope, Public, HideBySig
+    CreateImpl(Int32, TT&(Out)): PrivateScope, Public, HideBySig
+    CreateImpl(ImplDesc&, Int32, TT&(Out)): PrivateScope, Public, HideBySig
+    CreateImpl(Int32, Int32, TT&(Out)): PrivateScope, Public, HideBySig
+    CreateImpl(PXCMScheduler, PXCMAccelerator, ImplDesc&, Int32, Int32, TT&(Out)): PrivateScope, Public, HideBySig
+    CreateImpl(PXCMScheduler, PXCMAccelerator, ImplDesc&, Int32, PXCMBase&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateImpl(Int32, PXCMBase&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateImpl(ImplDesc&, Int32, PXCMBase&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateImpl(Int32, Int32, PXCMBase&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateImpl(PXCMScheduler, PXCMAccelerator, ImplDesc&, Int32, Int32, PXCMBase&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadImplFromFile(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    UnloadImplFromFile(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateInstance(PXCMSession&(Out)): PrivateScope, Public, Static, HideBySig
+Struct PXCMSession+ImplVersion: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 major : Public
+    UInt16 minor : Public
+Struct PXCMSession+ImplGroup: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ImplGroup IMPL_GROUP_USER = 1073741824 : Public, Static, Literal, HasDefault
+    ImplGroup IMPL_GROUP_CORE = -2147483648 : Public, Static, Literal, HasDefault
+    ImplGroup IMPL_GROUP_SENSOR = 4 : Public, Static, Literal, HasDefault
+    ImplGroup IMPL_GROUP_SPEECH_RECOGNITION = 2 : Public, Static, Literal, HasDefault
+    ImplGroup IMPL_GROUP_OBJECT_RECOGNITION = 1 : Public, Static, Literal, HasDefault
+    ImplGroup IMPL_GROUP_ANY = 0 : Public, Static, Literal, HasDefault
+Struct PXCMSession+ImplSubgroup: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ImplSubgroup IMPL_SUBGROUP_VOICE_SYNTHESIS = 2 : Public, Static, Literal, HasDefault
+    ImplSubgroup IMPL_SUBGROUP_VOICE_RECOGNITION = 1 : Public, Static, Literal, HasDefault
+    ImplSubgroup IMPL_SUBGROUP_VIDEO_CAPTURE = 2 : Public, Static, Literal, HasDefault
+    ImplSubgroup IMPL_SUBGROUP_AUDIO_CAPTURE = 1 : Public, Static, Literal, HasDefault
+    ImplSubgroup IMPL_SUBGROUP_GESTURE_RECOGNITION = 16 : Public, Static, Literal, HasDefault
+    ImplSubgroup IMPL_SUBGROUP_FACE_ANALYSIS = 1 : Public, Static, Literal, HasDefault
+    ImplSubgroup IMPL_SUBGROUP_ANY = 0 : Public, Static, Literal, HasDefault
+Struct PXCMSession+ImplDesc: AutoLayout, AnsiClass, Class, NestedPublic, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    ImplGroup group : Public
+    ImplSubgroup subgroup : Public
+    Int32 algorithm : Public
+    Int32 iuid : Public
+    ImplVersion version : Public
+    AccelType acceleration : Public
+    UInt32 merit : Public
+    UInt32 vendor : Public
+    PXCMArray<int\,4\,4> cuids : Public
+    PXCMString<256> friendlyName : Public
+    PXCMArray<unsigned int\,4\,12> reserved : Public
+Struct PXCMArray<unsigned int\,4\,6>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    UInt32 Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, UInt32): PrivateScope, Public, HideBySig, SpecialName
+Struct PXCMArray<unsigned int\,4\,5>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    UInt32 Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, UInt32): PrivateScope, Public, HideBySig, SpecialName
+Struct PXCMArray<unsigned int\,4\,8>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    UInt32 Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, UInt32): PrivateScope, Public, HideBySig, SpecialName
+Struct PXCMArray<unsigned int\,4\,10>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    UInt32 Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, UInt32): PrivateScope, Public, HideBySig, SpecialName
+Struct PXCMArray<PXCMCapture::VideoStream::DataDesc::StreamDesc\,64\,4>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    StreamDesc Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, StreamDesc): PrivateScope, Public, HideBySig, SpecialName
+Struct PXCMArray<PXCMCapture::Device::DeviceCap\,8\,120>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    DeviceCap Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, DeviceCap): PrivateScope, Public, HideBySig, SpecialName
+Struct PXCMArray<unsigned int\,4\,16>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    UInt32 Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, UInt32): PrivateScope, Public, HideBySig, SpecialName
+Struct PXCMArray<unsigned int\,4\,7>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    UInt32 Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, UInt32): PrivateScope, Public, HideBySig, SpecialName
+Struct PXCMArray<unsigned int\,4\,263>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    UInt32 Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, UInt32): PrivateScope, Public, HideBySig, SpecialName
+Class PXCMCapture: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Methods:
+    QueryDevice(UInt32, DeviceInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateDevice(UInt32, Device&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMCapture+DeviceInfo: AutoLayout, AnsiClass, Class, NestedPublic, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    PXCMString<256> name : Public
+    PXCMString<256> did : Public
+    UInt32 didx : Public
+    Int32 options : Public
+    PXCMArray<unsigned int\,4\,6> reserved : Public
+Class PXCMCapture+Device: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+    Int32 DEVCAP_LIMIT IsConst : Public, Static, HasDefault
+  Methods:
+    QueryDevice(DeviceInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryStream(UInt32, StreamInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateStream(UInt32, Int32, TT&(Out)): PrivateScope, Public, HideBySig
+    CreateStream(UInt32, Int32, PXCMBase&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryPropertyInfo(Property, PXCMRangeF32&(Out), Single&(Out), Single&(Out), Boolean&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryProperty(Property, Single&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryPropertyAsUID(Property, Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryPropertyAsPoint(Property, PXCMPointF32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryPropertyAs3DPoint(Property, PXCMPoint3DF32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryPropertyAsRange(Property, PXCMRangeF32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetPropertyAuto(Property, Boolean(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetProperty(Property, Single): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMCapture+Device+StreamInfo: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 sidx : Public
+    Int32 cuid : Public
+    ImageType imageType : Public
+    PXCMArray<unsigned int\,4\,5> reserved : Public
+Struct PXCMCapture+Device+Property: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Property PROPERTY_CUSTOMIZED = 67108864 : Public, Static, Literal, HasDefault
+    Property PROPERTY_PROJECTION_SERIALIZABLE = 3003 : Public, Static, Literal, HasDefault
+    Property PROPERTY_ACCELEROMETER_READING = 3000 : Public, Static, Literal, HasDefault
+    Property PROPERTY_DEPTH_PRINCIPAL_POINT = 2008 : Public, Static, Literal, HasDefault
+    Property PROPERTY_DEPTH_FOCAL_LENGTH = 2006 : Public, Static, Literal, HasDefault
+    Property PROPERTY_DEPTH_SENSOR_RANGE = 2002 : Public, Static, Literal, HasDefault
+    Property PROPERTY_DEPTH_FIELD_OF_VIEW = 2000 : Public, Static, Literal, HasDefault
+    Property PROPERTY_COLOR_PRINCIPAL_POINT = 1008 : Public, Static, Literal, HasDefault
+    Property PROPERTY_COLOR_FOCAL_LENGTH = 1006 : Public, Static, Literal, HasDefault
+    Property PROPERTY_COLOR_SENSOR_RANGE = 1002 : Public, Static, Literal, HasDefault
+    Property PROPERTY_COLOR_FIELD_OF_VIEW = 1000 : Public, Static, Literal, HasDefault
+    Property PROPERTY_DEPTH_SMOOTHING = 203 : Public, Static, Literal, HasDefault
+    Property PROPERTY_DEPTH_CONFIDENCE_THRESHOLD = 202 : Public, Static, Literal, HasDefault
+    Property PROPERTY_DEPTH_LOW_CONFIDENCE_VALUE = 201 : Public, Static, Literal, HasDefault
+    Property PROPERTY_DEPTH_SATURATION_VALUE = 200 : Public, Static, Literal, HasDefault
+    Property PROPERTY_AUDIO_MIX_LEVEL = 100 : Public, Static, Literal, HasDefault
+    Property PROPERTY_COLOR_GAIN = 10 : Public, Static, Literal, HasDefault
+    Property PROPERTY_COLOR_BACK_LIGHT_COMPENSATION = 9 : Public, Static, Literal, HasDefault
+    Property PROPERTY_COLOR_SHARPNESS = 8 : Public, Static, Literal, HasDefault
+    Property PROPERTY_COLOR_WHITE_BALANCE = 7 : Public, Static, Literal, HasDefault
+    Property PROPERTY_COLOR_GAMMA = 6 : Public, Static, Literal, HasDefault
+    Property PROPERTY_COLOR_HUE = 5 : Public, Static, Literal, HasDefault
+    Property PROPERTY_COLOR_SATURATION = 4 : Public, Static, Literal, HasDefault
+    Property PROPERTY_COLOR_CONTRAST = 3 : Public, Static, Literal, HasDefault
+    Property PROPERTY_COLOR_BRIGHTNESS = 2 : Public, Static, Literal, HasDefault
+    Property PROPERTY_COLOR_EXPOSURE = 1 : Public, Static, Literal, HasDefault
+Struct PXCMCapture+Device+DeviceCap: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Property label : Public
+    Single value : Public
+Class PXCMCapture+VideoStream: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+    Int32 STREAM_LIMIT IsConst : Public, Static, HasDefault
+  Methods:
+    QueryStream(StreamInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryProfile(ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryProfile(UInt32, ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetProfile(ProfileInfo&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ReadStreamAsync(PXCMImage&(Out), SyncPoint&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMCapture+VideoStream+ProfileInfo: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    ImageInfo imageInfo : Public
+    PXCMRatioU32 frameRateMin : Public
+    PXCMRatioU32 frameRateMax : Public
+    ImageOption imageOptions : Public
+    PXCMArray<unsigned int\,4\,8> reserved : Public
+Struct PXCMCapture+VideoStream+DataDesc: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    PXCMArray<PXCMCapture::VideoStream::DataDesc::StreamDesc\,64\,4> streams : Public
+    PXCMArray<PXCMCapture::Device::DeviceCap\,8\,120> devCaps : Public
+    PXCMArray<unsigned int\,4\,16> reserved : Public
+Struct PXCMCapture+VideoStream+DataDesc+StreamDesc: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    PXCMSizeU32 sizeMin : Public
+    PXCMSizeU32 sizeMax : Public
+    ColorFormat format : Public
+    ImageOption options : Public
+    PXCMArray<unsigned int\,4\,10> reserved : Public
+Class PXCMCapture+AudioStream: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Methods:
+    QueryStream(StreamInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryProfile(ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryProfile(UInt32, ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetProfile(ProfileInfo&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ReadStreamAsync(PXCMAudio&(Out), SyncPoint&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMCapture+AudioStream+ProfileInfo: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    AudioInfo audioInfo : Public
+    Int32 audioOptions : Public
+    PXCMArray<unsigned int\,4\,7> reserved : Public
+Struct PXCMCapture+AudioStream+DataDesc: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    AudioInfo info : Public
+    AudioOption options : Public
+    PXCMArray<unsigned int\,4\,263> reserved : Public
+Class PXCMProjection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static, HasDefault
+  Methods:
+    ProjectImageToRealWorld(PXCMPoint3DF32[], PXCMPoint3DF32[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ProjectRealWorldToImage(PXCMPoint3DF32[], PXCMPointF32[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MapDepthToColorCoordinates(PXCMPoint3DF32[], PXCMPointF32[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MapColorCoordinatesToDepth(PXCMPointF32[], PXCMPointF32[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMArray<unsigned int\,4\,4>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    UInt32 Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, UInt32): PrivateScope, Public, HideBySig, SpecialName
+Class PXCMFaceAnalysis: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Methods:
+    QueryProfile(ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryProfile(UInt32, ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetProfile(ProfileInfo&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryFace(UInt32, Int32&(Out), UInt64&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ProcessImageAsync(PXCMImage[], SyncPoint&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMFaceAnalysis+ProfileInfo: AutoLayout, AnsiClass, Class, NestedPublic, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    DataDesc inputs : Public
+    Boolean iftracking : Public
+    PXCMArray<unsigned int\,4\,7> reserved : Public
+Class PXCMFaceAnalysis+Detection: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Methods:
+    QueryProfile(ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryProfile(UInt32, ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetProfile(ProfileInfo&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryData(Int32, Data&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMFaceAnalysis+Detection+ViewAngle: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ViewAngle VIEW_ANGLE_OMNI = -1 : Public, Static, Literal, HasDefault
+    ViewAngle VIEW_ANGLE_FRONTALROLL = 484 : Public, Static, Literal, HasDefault
+    ViewAngle VIEW_ANGLE_MULTI = 31 : Public, Static, Literal, HasDefault
+    ViewAngle VIEW_ANGLE_HALF_MULTI = 14 : Public, Static, Literal, HasDefault
+    ViewAngle VIEW_ROLL_60N = 256 : Public, Static, Literal, HasDefault
+    ViewAngle VIEW_ROLL_60 = 128 : Public, Static, Literal, HasDefault
+    ViewAngle VIEW_ROLL_30N = 64 : Public, Static, Literal, HasDefault
+    ViewAngle VIEW_ROLL_30 = 32 : Public, Static, Literal, HasDefault
+    ViewAngle VIEW_ANGLE_180 = 16 : Public, Static, Literal, HasDefault
+    ViewAngle VIEW_ANGLE_135 = 8 : Public, Static, Literal, HasDefault
+    ViewAngle VIEW_ANGLE_FRONTAL = 4 : Public, Static, Literal, HasDefault
+    ViewAngle VIEW_ANGLE_45 = 2 : Public, Static, Literal, HasDefault
+    ViewAngle VIEW_ANGLE_0 = 1 : Public, Static, Literal, HasDefault
+Struct PXCMFaceAnalysis+Detection+ProfileInfo: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    PXCMSizeU32 minFaceSize : Public
+    PXCMSizeU32 maxFaceSize : Public
+    UInt64 reserved : Public
+    ViewAngle viewAngles : Public
+    UInt32 responsiveness : Public
+Struct PXCMFaceAnalysis+Detection+Data: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    PXCMRectU32 rectangle : Public
+    Int32 fid : Public
+    UInt32 confidence : Public
+    ViewAngle viewAngle : Public
+    PXCMArray<unsigned int\,4\,4> reserved : Public
+Class PXCMFaceAnalysis+Landmark: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Methods:
+    QueryProfile(ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryProfile(UInt32, ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetProfile(ProfileInfo&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryLandmarkData(Int32, Label, LandmarkData[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryLandmarkData(Int32, Label, UInt32, LandmarkData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryPoseData(Int32, PoseData&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMFaceAnalysis+Landmark+Label: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Label LABEL_SIZE_MASK = 4095 : Public, Static, Literal, HasDefault
+    Label LABEL_7POINTS = 520199 : Public, Static, Literal, HasDefault
+    Label LABEL_6POINTS = 258054 : Public, Static, Literal, HasDefault
+    Label LABEL_NOSE_TIP = 262144 : Public, Static, Literal, HasDefault
+    Label LABEL_MOUTH_RIGHT_CORNER = 131072 : Public, Static, Literal, HasDefault
+    Label LABEL_MOUTH_LEFT_CORNER = 65536 : Public, Static, Literal, HasDefault
+    Label LABEL_RIGHT_EYE_INNER_CORNER = 32768 : Public, Static, Literal, HasDefault
+    Label LABEL_RIGHT_EYE_OUTER_CORNER = 16384 : Public, Static, Literal, HasDefault
+    Label LABEL_LEFT_EYE_INNER_CORNER = 8192 : Public, Static, Literal, HasDefault
+    Label LABEL_LEFT_EYE_OUTER_CORNER = 4096 : Public, Static, Literal, HasDefault
+Struct PXCMFaceAnalysis+Landmark+ProfileInfo: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Label labels : Public
+    PXCMArray<unsigned int\,4\,7> reserved : Public
+Struct PXCMFaceAnalysis+Landmark+PoseData: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 fid : Public
+    Single yaw : Public
+    Single roll : Public
+    Single pitch : Public
+    PXCMArray<unsigned int\,4\,4> reserved : Public
+Struct PXCMFaceAnalysis+Landmark+LandmarkData: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    PXCMPoint3DF32 position : Public
+    Int32 fid : Public
+    Label label : Public
+    UInt32 lidx : Public
+    PXCMArray<unsigned int\,4\,6> reserved : Public
+Class PXCMFaceAnalysis+Recognition: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Methods:
+    QueryProfile(ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryProfile(UInt32, ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetProfile(ProfileInfo&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateModel(Int32, Model&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DeserializeModel(Byte[], Model&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMFaceAnalysis+Recognition+ProfileInfo: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 modelSize : Public
+    Single threshold : Public
+    PXCMArray<unsigned int\,4\,6> reserved : Public
+Class PXCMFaceAnalysis+Recognition+Model: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Methods:
+    Serialize(Byte[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Compare(Model[], UInt32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Compare(Model[], Single[], UInt32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMArray<unsigned int\,4\,26>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    UInt32 Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, UInt32): PrivateScope, Public, HideBySig, SpecialName
+Struct PXCMArray<unsigned int\,4\,9>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    UInt32 Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, UInt32): PrivateScope, Public, HideBySig, SpecialName
+Class PXCMGesture: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Methods:
+    QueryProfile(ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryProfile(UInt32, ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetProfile(ProfileInfo&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryUser(UInt32, Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryBlobData(Label, UInt32, Blob&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryBlobImage(Label, UInt32, PXCMImage&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryNodeData(Int32, Label, GeoNode[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryNodeData(Int32, Label, GeoNode&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryGestureData(Int32, Label, UInt32, Gesture&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ProcessImageAsync(PXCMImage[], SyncPoint&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SubscribeGesture(UInt32, OnGesture): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SubscribeAlert(OnAlert): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMGesture+GeoNode: AutoLayout, AnsiClass, Class, NestedPublic, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 timeStamp : Public
+    Int32 user : Public
+    Label body : Public
+    Side side : Public
+    UInt32 confidence : Public
+    PXCMPoint3DF32 positionWorld : Public
+    PXCMPoint3DF32 positionImage : Public
+    Single radiusWorld : Public
+    Single radiusImage : Public
+    PXCMPoint3DF32 massCenterWorld : Public
+    PXCMPoint3DF32 massCenterImage : Public
+    PXCMPoint3DF32 normal : Public
+    UInt32 openness : Public
+    Openness opennessState : Public
+Struct PXCMGesture+GeoNode+Label: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Label LABEL_HAND_LOWER = 9 : Public, Static, Literal, HasDefault
+    Label LABEL_HAND_MIDDLE = 8 : Public, Static, Literal, HasDefault
+    Label LABEL_HAND_UPPER = 7 : Public, Static, Literal, HasDefault
+    Label LABEL_HAND_FINGERTIP = 6 : Public, Static, Literal, HasDefault
+    Label LABEL_FINGER_PINKY = 5 : Public, Static, Literal, HasDefault
+    Label LABEL_FINGER_RING = 4 : Public, Static, Literal, HasDefault
+    Label LABEL_FINGER_MIDDLE = 3 : Public, Static, Literal, HasDefault
+    Label LABEL_FINGER_INDEX = 2 : Public, Static, Literal, HasDefault
+    Label LABEL_FINGER_THUMB = 1 : Public, Static, Literal, HasDefault
+    Label LABEL_BODY_HAND_RIGHT = 524288 : Public, Static, Literal, HasDefault
+    Label LABEL_BODY_HAND_SECONDARY = 524288 : Public, Static, Literal, HasDefault
+    Label LABEL_BODY_HAND_LEFT = 262144 : Public, Static, Literal, HasDefault
+    Label LABEL_BODY_HAND_PRIMARY = 262144 : Public, Static, Literal, HasDefault
+    Label LABEL_BODY_ELBOW_RIGHT = 32768 : Public, Static, Literal, HasDefault
+    Label LABEL_BODY_ELBOW_SECONDARY = 32768 : Public, Static, Literal, HasDefault
+    Label LABEL_BODY_ELBOW_LEFT = 16384 : Public, Static, Literal, HasDefault
+    Label LABEL_BODY_ELBOW_PRIMARY = 16384 : Public, Static, Literal, HasDefault
+    Label LABEL_MASK_DETAILS = 255 : Public, Static, Literal, HasDefault
+    Label LABEL_MASK_BODY = -256 : Public, Static, Literal, HasDefault
+    Label LABEL_ANY = 0 : Public, Static, Literal, HasDefault
+Struct PXCMGesture+GeoNode+Side: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Side LABEL_RIGHT = 2 : Public, Static, Literal, HasDefault
+    Side LABEL_LEFT = 1 : Public, Static, Literal, HasDefault
+    Side LABEL_SIDE_ANY = 0 : Public, Static, Literal, HasDefault
+Struct PXCMGesture+GeoNode+Openness: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Openness LABEL_OPEN = 2 : Public, Static, Literal, HasDefault
+    Openness LABEL_CLOSE = 1 : Public, Static, Literal, HasDefault
+    Openness LABEL_OPENNESS_ANY = 0 : Public, Static, Literal, HasDefault
+Struct PXCMGesture+Blob: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 timeStamp : Public
+    Label name : Public
+    UInt32 labelBackground : Public
+    UInt32 labelLeftHand : Public
+    UInt32 labelRightHand : Public
+    PXCMArray<unsigned int\,4\,26> reserved : Public
+Struct PXCMGesture+Blob+Label: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Label LABEL_SCENE = 1 : Public, Static, Literal, HasDefault
+    Label LABEL_ANY = 0 : Public, Static, Literal, HasDefault
+Struct PXCMGesture+Gesture: AutoLayout, AnsiClass, Class, NestedPublic, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 timeStamp : Public
+    Int32 user : Public
+    Label body : Public
+    Label label : Public
+    UInt32 confidence : Public
+    Boolean active : Public
+    PXCMArray<unsigned int\,4\,9> reserved : Public
+Class PXCMGesture+Gesture+OnGesture: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Gesture&): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Gesture&, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(Gesture&, IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Struct PXCMGesture+Gesture+Label: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Label LABEL_POSE_BIG5 = 262148 : Public, Static, Literal, HasDefault
+    Label LABEL_POSE_PEACE = 262147 : Public, Static, Literal, HasDefault
+    Label LABEL_POSE_THUMB_DOWN = 262146 : Public, Static, Literal, HasDefault
+    Label LABEL_POSE_THUMB_UP = 262145 : Public, Static, Literal, HasDefault
+    Label LABEL_HAND_CIRCLE = 65538 : Public, Static, Literal, HasDefault
+    Label LABEL_HAND_WAVE = 65537 : Public, Static, Literal, HasDefault
+    Label LABEL_NAV_SWIPE_DOWN = 131076 : Public, Static, Literal, HasDefault
+    Label LABEL_NAV_SWIPE_UP = 131075 : Public, Static, Literal, HasDefault
+    Label LABEL_NAV_SWIPE_RIGHT = 131074 : Public, Static, Literal, HasDefault
+    Label LABEL_NAV_SWIPE_LEFT = 131073 : Public, Static, Literal, HasDefault
+    Label LABEL_SET_CUSTOMIZED = 524288 : Public, Static, Literal, HasDefault
+    Label LABEL_SET_POSE = 262144 : Public, Static, Literal, HasDefault
+    Label LABEL_SET_NAVIGATION = 131072 : Public, Static, Literal, HasDefault
+    Label LABEL_SET_HAND = 65536 : Public, Static, Literal, HasDefault
+    Label LABEL_MASK_DETAILS = 65535 : Public, Static, Literal, HasDefault
+    Label LABEL_MASK_SET = -65536 : Public, Static, Literal, HasDefault
+    Label LABEL_ANY = 0 : Public, Static, Literal, HasDefault
+Struct PXCMGesture+Alert: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 timeStamp : Public
+    Int32 user : Public
+    Label body : Public
+    Label label : Public
+    PXCMArray<unsigned int\,4\,3> reserved : Public
+Class PXCMGesture+Alert+OnAlert: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Alert&): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Alert&, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(Alert&, IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Struct PXCMGesture+Alert+Label: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Label LABEL_GEONODE_INACTIVE = 128 : Public, Static, Literal, HasDefault
+    Label LABEL_GEONODE_ACTIVE = 64 : Public, Static, Literal, HasDefault
+    Label LABEL_FOV_OK = 32 : Public, Static, Literal, HasDefault
+    Label LABEL_FOV_BLOCKED = 16 : Public, Static, Literal, HasDefault
+    Label LABEL_FOV_BOTTOM = 8 : Public, Static, Literal, HasDefault
+    Label LABEL_FOV_TOP = 4 : Public, Static, Literal, HasDefault
+    Label LABEL_FOV_RIGHT = 2 : Public, Static, Literal, HasDefault
+    Label LABEL_FOV_LEFT = 1 : Public, Static, Literal, HasDefault
+    Label LABEL_ANY = 0 : Public, Static, Literal, HasDefault
+Struct PXCMGesture+ProfileInfo: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    DataDesc inputs : Public
+    Label sets : Public
+    Label bodies : Public
+    Label blobs : Public
+    Label alerts : Public
+    Label nodeAlerts : Public
+    UInt32 activationDistance : Public
+    PXCMArray<unsigned int\,4\,6> reserved : Public
+Class PXCMMetadata: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Properties:
+    Int32 uid  'get ' : 
+  Methods:
+    AttachBuffer(Int32, Byte[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryBuffer(Int32, Byte[]&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryMetadata(UInt32, Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AttachSerializable(Int32, PXCMBase): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateSerializable(Int32, Int32, TT&(Out)): PrivateScope, Public, HideBySig
+    CreateSerializable(Int32, Int32, PXCMBase&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DetachMetadata(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_uid(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    QueryUID(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class PXCMPowerState: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Properties:
+    State istate 'get ' : 
+    State state 'get set' : 
+  Methods:
+    get_state(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_state(State): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_istate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    QueryState(State&(Out), State&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetState(State): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMPowerState+State: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    State STATE_C3 = 4 : Public, Static, Literal, HasDefault
+    State STATE_C2 = 3 : Public, Static, Literal, HasDefault
+    State STATE_C1 = 2 : Public, Static, Literal, HasDefault
+    State STATE_C0 = 1 : Public, Static, Literal, HasDefault
+    State STATE_ADAPTIVE = 0 : Public, Static, Literal, HasDefault
+Struct PXCMString<128>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Methods:
+    get(): PrivateScope, Public, HideBySig
+    set(String): PrivateScope, Public, HideBySig
+Struct PXCMArray<unsigned int\,4\,13>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    UInt32 Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, UInt32): PrivateScope, Public, HideBySig, SpecialName
+Class PXCMVoiceRecognition: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Methods:
+    QueryProfile(ProfileInfo&(Out)): PrivateScope, Public, HideBySig
+    QueryProfile(UInt32, ProfileInfo&(Out)): PrivateScope, Public, HideBySig
+    SetProfile(ProfileInfo&): PrivateScope, Public, HideBySig
+    CreateGrammar(Int32&(Out)): PrivateScope, Public, HideBySig
+    AddGrammar(Int32, Int32, String): PrivateScope, Public, HideBySig
+    SetGrammar(Int32): PrivateScope, Public, HideBySig
+    DeleteGrammar(Int32): PrivateScope, Public, HideBySig
+    SetDictation(): PrivateScope, Public, HideBySig
+    ProcessAudioAsync(PXCMAudio, SyncPoint&(Out)): PrivateScope, Public, HideBySig
+    ProcessAudioAsync(): PrivateScope, Public, HideBySig (Obsolete)
+    ProcessAudioEOS(): PrivateScope, Public, HideBySig
+    SubscribeRecognition(UInt32, OnRecognized): PrivateScope, Public, HideBySig
+    SubscribeAlert(OnAlert): PrivateScope, Public, HideBySig
+Struct PXCMVoiceRecognition+Recognition: AutoLayout, AnsiClass, Class, NestedPublic, ExplicitLayout, Sealed, UnicodeClass, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 timeStamp : Public
+    NBest[] nBest : Public, HasFieldMarshal
+    PXCMArray<unsigned int\,4\,5> reserved : Public
+    UInt32 duration : Public
+    System.String dictation : Public, HasFieldMarshal
+  Properties:
+    UInt32 confidence 'get set' : 
+    Int32 label 'get set' : 
+  Methods:
+    get_label(): PrivateScope, Public, HideBySig, SpecialName
+    set_label(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_confidence(): PrivateScope, Public, HideBySig, SpecialName
+    set_confidence(UInt32): PrivateScope, Public, HideBySig, SpecialName
+Class PXCMVoiceRecognition+Recognition+OnRecognized: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Recognition&): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Recognition&, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(Recognition&, IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Struct PXCMVoiceRecognition+Recognition+NBest: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 label : Public
+    UInt32 confidence : Public
+Struct PXCMVoiceRecognition+Alert: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 timeStamp : Public
+    Label label : Public
+    PXCMArray<unsigned int\,4\,6> reserved : Public
+Class PXCMVoiceRecognition+Alert+OnAlert: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Alert&): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Alert&, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(Alert&, IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Struct PXCMVoiceRecognition+Alert+Label: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Label LABEL_SPEECH_UNRECOGNIZABLE = 8 : Public, Static, Literal, HasDefault
+    Label LABEL_SNR_LOW = 4 : Public, Static, Literal, HasDefault
+    Label LABEL_VOLUME_LOW = 2 : Public, Static, Literal, HasDefault
+    Label LABEL_VOLUME_HIGH = 1 : Public, Static, Literal, HasDefault
+Struct PXCMVoiceRecognition+ProfileInfo: AutoLayout, AnsiClass, Class, NestedPublic, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    DataDesc inputs : Public
+    PXCMString<128> speaker : Public
+    Language language : Public
+    Label alerts : Public
+    UInt32 endOfSentence : Public
+    PXCMArray<unsigned int\,4\,13> reserved : Public
+Struct PXCMVoiceRecognition+ProfileInfo+Language: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Language LANGUAGE_BR_PORTUGUESE = 1380086896 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_CN_CHINESE = 1313040506 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_JP_JAPANESE = 1347051882 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_IT_ITALIAN = 1414100073 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_FR_FRENCH = 1380348518 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_US_SPANISH = 1398109029 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_DE_GERMAN = 1162110308 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_GB_ENGLISH = 1111977573 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_US_ENGLISH = 1398107749 : Public, Static, Literal, HasDefault
+Class PXCMVoiceSynthesis: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Methods:
+    QueryProfile(ProfileInfo&(Out)): PrivateScope, Public, HideBySig
+    QueryProfile(UInt32, ProfileInfo&(Out)): PrivateScope, Public, HideBySig
+    SetProfile(ProfileInfo&): PrivateScope, Public, HideBySig
+    QueueSentence(String, Int32&(Out)): PrivateScope, Public, HideBySig
+    ProcessAudioAsync(Int32, PXCMAudio&(Out), SyncPoint&(Out)): PrivateScope, Public, HideBySig
+Struct PXCMVoiceSynthesis+ProfileInfo: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    DataDesc outputs : Public
+    Language language : Public
+    Voice voice : Public
+    Single rate : Public
+    UInt32 volume : Public
+    PXCMArray<unsigned int\,4\,4> reserved : Public
+Struct PXCMVoiceSynthesis+ProfileInfo+Language: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Language LANGUAGE_BR_PORTUGUESE = 1380086896 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_CN_CHINESE = 1313040506 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_JP_JAPANESE = 1347051882 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_IT_ITALIAN = 1414100073 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_FR_FRENCH = 1380348518 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_US_SPANISH = 1398109029 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_DE_GERMAN = 1162110308 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_GB_ENGLISH = 1111977573 : Public, Static, Literal, HasDefault
+    Language LANGUAGE_US_ENGLISH = 1398107749 : Public, Static, Literal, HasDefault
+Struct PXCMVoiceSynthesis+ProfileInfo+Voice: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Voice VOICE_FEMALE = 1 : Public, Static, Literal, HasDefault
+Struct PXCMArray<unsigned int\,4\,32>: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    UInt32 Item [Int32] 'get set' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, UInt32): PrivateScope, Public, HideBySig, SpecialName
+Class PXCMSegmentation: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PXCMBase
+  Fields:
+    Int32 CUID IsConst : Public, Static
+  Methods:
+    QueryProfile(ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryProfile(UInt32, ProfileInfo&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetProfile(ProfileInfo&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetROIRegions(UInt32, PXCRectU32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QuerySegmentData(UInt32, Segment&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SegmentImageAsync(PXCMImage[], PXCMImage&(Out), SyncPoint&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BlendImageAsync(PXCMImage, PXCMImage, PXCMImage, PXCMImage&(Out), SyncPoint&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct PXCMSegmentation+FaceMode: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    FaceMode FACE_ALG_DEFAULT = 1 : Public, Static, Literal, HasDefault
+    FaceMode FACE_ANY = 0 : Public, Static, Literal, HasDefault
+Struct PXCMSegmentation+BlendMode: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    BlendMode BLEND_ALPHA_CHANNEL = 4 : Public, Static, Literal, HasDefault
+    BlendMode BLEND_BG_IMAGE = 3 : Public, Static, Literal, HasDefault
+    BlendMode BLEND_BG_BLUE = 2 : Public, Static, Literal, HasDefault
+    BlendMode BLEND_BG_WHITE = 1 : Public, Static, Literal, HasDefault
+    BlendMode BLEND_ANY = 0 : Public, Static, Literal, HasDefault
+Struct PXCMSegmentation+Segment: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 timeStamp : Public
+    UInt32 user : Public
+    PXCMArray<unsigned int\,4\,8> reserved : Public
+Struct PXCMSegmentation+ProfileInfo: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    DataDesc inputs : Public
+    FaceMode faceMode : Public
+    UInt32 maxDepthThreshold : Public
+    UInt32 minDepthThreshold : Public
+    Single filterFactor : Public
+    UInt32 contourSmoothness : Public
+    UInt32 minPerimeter : Public
+    BlendMode blendMode : Public
+    PXCMArray<unsigned int\,4\,32> reserved : Public
+Class UtilMCapture: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(PXCMSession): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    AudioStream audioStream 'get ' : 
+    Device device 'get ' : 
+    PXCMCapture capture 'get ' : 
+  Methods:
+    get_capture(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_device(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_audioStream(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SetFilter(Property, Single): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetFilter(ImplDesc&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetFilter(ProfileInfo&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetFilter(ImageType, PXCMSizeU32&, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetFilter(ImageType, PXCMSizeU32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LocateStreams(List`1 IsImplicitlyDereferenced, List`1 IsImplicitlyDereferenced): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LocateStreams(List`1 IsImplicitlyDereferenced): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LocateStreams(List`1 IsImplicitlyDereferenced): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LocateStreams(DataDesc&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LocateStreams(DataDesc&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MapImages(Int32, PXCMImage[], PXCMImage[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryImage(PXCMImage[], ImageType): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryVideoStream(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryVideoStream(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ReadStreamAsync(PXCMAudio&(Out), SyncPoint&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ReadStreamAsync(PXCMImage[], SyncPoint&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class UtilMCaptureFile: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :UtilMCapture
+    Void .ctor(PXCMSession, System.String, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 position 'get set' : 
+    Boolean realtime 'set' : 
+    Boolean pause 'set' : 
+    ImageType mask 'set' : 
+  Methods:
+    set_mask(ImageType): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_pause(Boolean(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_realtime(Boolean(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_position(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_position(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    QueryPosition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetMask(ImageType): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetPause(Boolean(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetPosition(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetRealtime(Boolean(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class UtilMPipeline: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(PXCMSession, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(PXCMSession, System.String, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(PXCMSession): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Init(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AcquireFrame(Boolean(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ReleaseFrame(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoopFrames(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IsAudioFrame(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IsImageFrame(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IsDisconnected(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnReconnect(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnDisconnect(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnNewFrame(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QuerySession(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryCapture(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnImage(PXCMImage): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnAudio(PXCMAudio): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableImage(ColorFormat): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableImage(ColorFormat, UInt32, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableAudio(AudioFormat): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableAudio(AudioFormat, UInt32, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryImageSize(ImageType, UInt32&(Out), UInt32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryImage(ImageType): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryAudio(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableFaceLocation(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableFaceLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableFaceLocation(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableFaceLandmark(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableFaceLandmark(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableFaceLandmark(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnFaceSetup(ProfileInfo&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnFaceDetectionSetup(ProfileInfo&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnFaceLandmarkSetup(ProfileInfo&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryFace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableGesture(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableGesture(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableGesture(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnGestureSetup(ProfileInfo&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnGesture(Gesture&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnAlert(Alert&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnAlert(Alert&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryGesture(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableSegmentation(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableSegmentation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableSegmentation(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnSegmentationSetup(ProfileInfo&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QuerySegmentation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetSegmentationBlendMode(BlendMode): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetSegmentationBGImage(PXCMImage): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QuerySegmentationImage(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QuerySegmentationBlendedImage(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableVoiceRecognition(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableVoiceRecognition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableVoiceRecognition(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetVoiceCommands(String[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetVoiceDictation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnVoiceRecognitionSetup(ProfileInfo&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnRecognized(Recognition&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryVoiceRecognition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PauseVoiceRecognition(Boolean(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PauseGesture(Boolean(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PauseFaceLocation(Boolean(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PauseFaceLandmark(Boolean(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PauseSegmentation(Boolean(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig

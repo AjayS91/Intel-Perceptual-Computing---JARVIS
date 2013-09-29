@@ -1,0 +1,3 @@
+D:\Intel\PCSDK\framework\CSharp\gesture_viewer.cs\obj\x64\Debug\gesture_viewer.cs.MainForm.resources
+D:\Intel\PCSDK\framework\CSharp\gesture_viewer.cs\obj\x64\Debug\gesture_viewer.cs.Properties.Resources.resources
+D:\Intel\PCSDK\framework\CSharp\gesture_viewer.cs\obj\x64\Debug\gesture_viewer.cs_vs2010-12.csproj.GenerateResource.Cache

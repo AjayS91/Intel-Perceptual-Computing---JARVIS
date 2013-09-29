@@ -1,0 +1,103 @@
+﻿Build started 31-Aug-13 11:07:29 PM.
+     1>Project "D:\Intel\PCSDK\framework\CSharp\libpxcclr\libpxcclr_vs2010.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "build\Win32_Debug\libpxcclr\libpxcclr.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "build\Win32_Debug\libpxcclr\libpxcclr.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Iinclude /I..\..\..\include /I..\..\..\sample\common\include /I..\..\..\sample\common\res /ID:\Intel\PCSDK\/include /ID:\Intel\PCSDK\/sample/common/include /ID:\Intel\PCSDK\/sample/common/res /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"build\Win32_Debug\libpxcclr\\" /Fd"build\Win32_Debug\libpxcclr\vc100.pdb" /Gz /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\PresentationCore.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\WindowsBase.dll" /analyze- /errorReport:prompt ..\..\..\sample\common\src\util_capture.cpp ..\..\..\sample\common\src\util_captureimpl.cpp ..\..\..\sample\common\src\util_capture_file.cpp ..\..\..\sample\common\src\util_pipeline_face.cpp ..\..\..\sample\common\src\util_pipeline_gesture.cpp ..\..\..\sample\common\src\util_pipeline_raw.cpp ..\..\..\sample\common\src\util_pipeline_segmentation.cpp ..\..\..\sample\common\src\util_pipeline_voice.cpp ..\..\..\src\libpxc\libpxc.cpp src\AssemblyInfo.cpp src\pxcmaccelerator.cpp src\pxcmaudio.cpp src\pxcmbase.cpp src\pxcmcapture.cpp src\pxcmface.cpp src\pxcmgesture.cpp src\pxcmimage.cpp src\pxcmmetadata.cpp src\pxcmpowerstate.cpp src\pxcmprojection.cpp src\pxcmscheduler.cpp src\pxcmsegmentation.cpp src\pxcmsession.cpp src\pxcmvoice.cpp src\utilm_capture.cpp src\utilm_capture_file.cpp src\utilm_pipeline.cpp /clr:nostdlib 
+         util_capture.cpp
+         util_captureimpl.cpp
+         util_capture_file.cpp
+         util_pipeline_face.cpp
+         util_pipeline_gesture.cpp
+         util_pipeline_raw.cpp
+         util_pipeline_segmentation.cpp
+         util_pipeline_voice.cpp
+         libpxc.cpp
+         AssemblyInfo.cpp
+         pxcmaccelerator.cpp
+         pxcmaudio.cpp
+         pxcmbase.cpp
+         pxcmcapture.cpp
+         pxcmface.cpp
+         pxcmgesture.cpp
+         pxcmimage.cpp
+         pxcmmetadata.cpp
+         pxcmpowerstate.cpp
+         pxcmprojection.cpp
+         Generating Code...
+     1>D:\Intel\PCSDK\sample\common\src\util_capture_file.cpp : warning C4793: 'CaptureRecording::VideoStreamRecording::`vcall'{28}'' : function compiled as native :
+         	non-clrcall vcall thunks must be compiled as native
+     1>D:\Intel\PCSDK\sample\common\src\util_capture_file.cpp : warning C4793: 'CaptureRecording::VideoStreamRecording::`vcall'{32}'' : function compiled as native :
+         	non-clrcall vcall thunks must be compiled as native
+     1>D:\Intel\PCSDK\sample\common\src\util_capture_file.cpp : warning C4793: 'CaptureRecording::AudioStreamRecording::`vcall'{32}'' : function compiled as native :
+         	non-clrcall vcall thunks must be compiled as native
+     1>d:\intel\pcsdk\sample\common\src\util_capture_file.cpp(744): warning C4793: 'CapturePlayback::CapturePlayback' : function compiled as native :
+         	Aligned data types not supported in managed code
+     1>d:\intel\pcsdk\sample\common\src\util_capture_file.cpp(788): warning C4793: 'WaveFilePlayback::DevicePlayback::DevicePlayback' : function compiled as native :
+         	Aligned data types not supported in managed code
+     1>d:\intel\pcsdk\sample\common\src\util_capture_file.cpp(906): warning C4793: 'WaveFilePlayback::WaveFilePlayback' : function compiled as native :
+         	Aligned data types not supported in managed code
+     1>d:\intel\pcsdk\sample\common\src\util_capture_file.cpp(475): warning C4793: 'CapturePlayback::DevicePlayback::DevicePlayback' : function compiled as native :
+         	Aligned data types not supported in managed code
+     1>D:\Intel\PCSDK\sample\common\src\util_capture.cpp : warning C4793: 'UtilCapture::`vcall'{84}'' : function compiled as native :
+         	non-clrcall vcall thunks must be compiled as native
+     1>D:\Intel\PCSDK\sample\common\src\util_capture.cpp : warning C4793: 'UtilCapture::`vcall'{88}'' : function compiled as native :
+         	non-clrcall vcall thunks must be compiled as native
+         Compiling...
+         pxcmscheduler.cpp
+         pxcmsegmentation.cpp
+         pxcmsession.cpp
+         pxcmvoice.cpp
+         utilm_capture.cpp
+         utilm_capture_file.cpp
+         utilm_pipeline.cpp
+         Generating Code...
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Iinclude /I..\..\..\include /I..\..\..\sample\common\include /I..\..\..\sample\common\res /ID:\Intel\PCSDK\/include /ID:\Intel\PCSDK\/sample/common/include /ID:\Intel\PCSDK\/sample/common/res /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"build\Win32_Debug\libpxcclr\\" /Fd"build\Win32_Debug\libpxcclr\vc100.pdb" /Gz /TP /analyze- /errorReport:prompt "C:\Users\Rahul Roy\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+       ResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /Iinclude /I..\..\..\include /I..\..\..\sample\common\include /I..\..\..\sample\common\res /ID:\Intel\PCSDK\/include /ID:\Intel\PCSDK\/sample/common/include /ID:\Intel\PCSDK\/sample/common/res /nologo /fo"build\Win32_Debug\libpxcclr\libpxcclr.res" libpxcclr.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"bin\Win32\libpxcclr.dll" /INCREMENTAL /NOLOGO Advapi32.lib /MANIFEST /ManifestFile:"build\Win32_Debug\libpxcclr\libpxcclr.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Intel\PCSDK\framework\CSharp\libpxcclr\bin\Win32\libpxcclr.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL build\Win32_Debug\libpxcclr\libpxcclr.res
+         build\Win32_Debug\libpxcclr\util_capture.obj
+         build\Win32_Debug\libpxcclr\util_captureimpl.obj
+         build\Win32_Debug\libpxcclr\util_capture_file.obj
+         build\Win32_Debug\libpxcclr\util_pipeline_face.obj
+         build\Win32_Debug\libpxcclr\util_pipeline_gesture.obj
+         build\Win32_Debug\libpxcclr\util_pipeline_raw.obj
+         build\Win32_Debug\libpxcclr\util_pipeline_segmentation.obj
+         build\Win32_Debug\libpxcclr\util_pipeline_voice.obj
+         build\Win32_Debug\libpxcclr\libpxc.obj
+         build\Win32_Debug\libpxcclr\AssemblyInfo.obj
+         build\Win32_Debug\libpxcclr\pxcmaccelerator.obj
+         build\Win32_Debug\libpxcclr\pxcmaudio.obj
+         build\Win32_Debug\libpxcclr\pxcmbase.obj
+         build\Win32_Debug\libpxcclr\pxcmcapture.obj
+         build\Win32_Debug\libpxcclr\pxcmface.obj
+         build\Win32_Debug\libpxcclr\pxcmgesture.obj
+         build\Win32_Debug\libpxcclr\pxcmimage.obj
+         build\Win32_Debug\libpxcclr\pxcmmetadata.obj
+         build\Win32_Debug\libpxcclr\pxcmpowerstate.obj
+         build\Win32_Debug\libpxcclr\pxcmprojection.obj
+         build\Win32_Debug\libpxcclr\pxcmscheduler.obj
+         build\Win32_Debug\libpxcclr\pxcmsegmentation.obj
+         build\Win32_Debug\libpxcclr\pxcmsession.obj
+         build\Win32_Debug\libpxcclr\pxcmvoice.obj
+         build\Win32_Debug\libpxcclr\utilm_capture.obj
+         build\Win32_Debug\libpxcclr\utilm_capture_file.obj
+         build\Win32_Debug\libpxcclr\utilm_pipeline.obj
+         "build\Win32_Debug\libpxcclr\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         libpxcclr_vs2010.vcxproj -> D:\Intel\PCSDK\framework\CSharp\libpxcclr\bin\Win32\libpxcclr.dll
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"bin\Win32\libpxcclr.dll;#2" /manifest build\Win32_Debug\libpxcclr\libpxcclr.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "build\Win32_Debug\libpxcclr\libpxcclr.unsuccessfulbuild".
+         Touching "build\Win32_Debug\libpxcclr\libpxcclr.lastbuildstate".
+     1>Done Building Project "D:\Intel\PCSDK\framework\CSharp\libpxcclr\libpxcclr_vs2010.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:30.13

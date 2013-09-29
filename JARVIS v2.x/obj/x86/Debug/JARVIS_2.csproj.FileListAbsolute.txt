@@ -1,0 +1,67 @@
+C:\Users\Rahul Roy\Desktop\JARVIS\CSharp\gesture_viewer.cs\bin\x86\Debug\gesture_viewer.cs.exe
+C:\Users\Rahul Roy\Desktop\JARVIS\CSharp\gesture_viewer.cs\bin\x86\Debug\gesture_viewer.cs.pdb
+C:\Users\Rahul Roy\Desktop\JARVIS\CSharp\gesture_viewer.cs\bin\x86\Debug\libpxcclr.dll
+C:\Users\Rahul Roy\Desktop\JARVIS\CSharp\gesture_viewer.cs\bin\x86\Debug\libpxcclr.pdb
+C:\Users\Rahul Roy\Desktop\JARVIS\CSharp\gesture_viewer.cs\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Rahul Roy\Desktop\JARVIS\CSharp\gesture_viewer.cs\obj\x86\Debug\Jarvis.MainFormGR.resources
+C:\Users\Rahul Roy\Desktop\JARVIS\CSharp\gesture_viewer.cs\obj\x86\Debug\Jarvis.MainFormVR.resources
+C:\Users\Rahul Roy\Desktop\JARVIS\CSharp\gesture_viewer.cs\obj\x86\Debug\Jarvis.MainScreen.resources
+C:\Users\Rahul Roy\Desktop\JARVIS\CSharp\gesture_viewer.cs\obj\x86\Debug\Jarvis.Properties.Resources.resources
+C:\Users\Rahul Roy\Desktop\JARVIS\CSharp\gesture_viewer.cs\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Rahul Roy\Desktop\JARVIS\CSharp\gesture_viewer.cs\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Rahul Roy\Desktop\JARVIS\CSharp\gesture_viewer.cs\obj\x86\Debug\gesture_viewer.cs.exe
+C:\Users\Rahul Roy\Desktop\JARVIS\CSharp\gesture_viewer.cs\obj\x86\Debug\gesture_viewer.cs.pdb
+C:\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\bin\x86\Debug\jarvis_v2.x.exe
+C:\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\bin\x86\Debug\jarvis_v2.x.pdb
+C:\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\bin\x86\Debug\libpxcclr.dll
+C:\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\bin\x86\Debug\libpxcclr.pdb
+C:\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\Jarvis.MainFormGR.resources
+C:\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\Jarvis.MainFormVR.resources
+C:\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\Jarvis.MainScreen.resources
+C:\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\Jarvis.Properties.Resources.resources
+C:\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\jarvis_v2.x.exe
+C:\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\jarvis_v2.x.pdb
+\\THE_YETI\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\jarvis_v2.x.exe
+\\THE_YETI\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\jarvis_v2.x.pdb
+\\THE_YETI\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\bin\x86\Debug\jarvis_v2.x.exe
+\\THE_YETI\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\bin\x86\Debug\jarvis_v2.x.pdb
+\\THE_YETI\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\bin\x86\Debug\libpxcclr.dll
+\\THE_YETI\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\bin\x86\Debug\libpxcclr.pdb
+\\THE_YETI\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\JARVIS_2.csprojResolveAssemblyReference.cache
+\\THE_YETI\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\Jarvis.MainFormGR.resources
+\\THE_YETI\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\Jarvis.MainFormVR.resources
+\\THE_YETI\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\Jarvis.MainScreen.resources
+\\THE_YETI\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\Jarvis.Properties.Resources.resources
+\\THE_YETI\Users\Rahul Roy\Desktop\JARVIS v2\JARVIS v2.x\obj\x86\Debug\JARVIS_2.csproj.GenerateResource.Cache
+C:\Users\Rahul Roy\Desktop\JARVIS\JARVIS v2.x\bin\x86\Debug\jarvis_v2.x.exe
+C:\Users\Rahul Roy\Desktop\JARVIS\JARVIS v2.x\bin\x86\Debug\jarvis_v2.x.pdb
+C:\Users\Rahul Roy\Desktop\JARVIS\JARVIS v2.x\bin\x86\Debug\libpxcclr.dll
+C:\Users\Rahul Roy\Desktop\JARVIS\JARVIS v2.x\bin\x86\Debug\libpxcclr.pdb
+C:\Users\Rahul Roy\Desktop\JARVIS\JARVIS v2.x\obj\x86\Debug\Jarvis.MainFormGR.resources
+C:\Users\Rahul Roy\Desktop\JARVIS\JARVIS v2.x\obj\x86\Debug\Jarvis.MainFormVR.resources
+C:\Users\Rahul Roy\Desktop\JARVIS\JARVIS v2.x\obj\x86\Debug\Jarvis.MainScreen.resources
+C:\Users\Rahul Roy\Desktop\JARVIS\JARVIS v2.x\obj\x86\Debug\Jarvis.Properties.Resources.resources
+C:\Users\Rahul Roy\Desktop\JARVIS\JARVIS v2.x\obj\x86\Debug\JARVIS_2.csproj.GenerateResource.Cache
+C:\Users\Rahul Roy\Desktop\JARVIS\JARVIS v2.x\obj\x86\Debug\jarvis_v2.x.exe
+C:\Users\Rahul Roy\Desktop\JARVIS\JARVIS v2.x\obj\x86\Debug\jarvis_v2.x.pdb
+C:\Users\Rahul Roy\Desktop\JARVIS\JARVIS v2.x\obj\x86\Debug\JARVIS_2.csprojResolveAssemblyReference.cache
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\obj\x86\Debug\jarvis_v2.x.exe
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\obj\x86\Debug\jarvis_v2.x.pdb
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\bin\x86\Debug\jarvis_v2.x.exe
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\bin\x86\Debug\jarvis_v2.x.pdb
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\bin\x86\Debug\libpxcclr.dll
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\bin\x86\Debug\libpxcclr.pdb
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\obj\x86\Debug\Jarvis.MainFormGR.resources
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\obj\x86\Debug\Jarvis.MainFormVR.resources
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\obj\x86\Debug\Jarvis.MainScreen.resources
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\obj\x86\Debug\Jarvis.Properties.Resources.resources
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\bin\x86\Debug\jarvis_v2.x.exe.manifest
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\bin\x86\Debug\jarvis_v2.x.application
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\obj\x86\Debug\jarvis_v2.x.exe.manifest
+C:\Users\Rahul Roy\Desktop\new\JARVIS\JARVIS v2.x\obj\x86\Debug\jarvis_v2.x.application
